@@ -107,11 +107,13 @@ function App() {
     
   let hours = [(new Date()).getHours()];
   for(let i = 1; i < 49; i++) {
-    if(hours[i - 1] !== 24) hours[i] = hours[i - 1] + 1;
+    if(hours[i - 1] !== 23) hours[i] = hours[i - 1] + 1;
     else hours[i] = 0;
   }
   for(let i = 0; i < hours.length; i++) {
     if(hours[i] > 12) hours[i] = hours[i] - 12 + ":00 PM";
+    else if(hours[i] === 12) hours[i] = "12:00 PM";
+    else if(hours[i] == 0) hours[i] = "12:00 AM";
     else hours[i] = hours[i] + ":00 AM";
   }
 
