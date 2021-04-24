@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+* {
+  position:relative;
+}
+body {
+  margin:0;
+  padding-bottom:30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#searchContainer {
+  padding-top:30px;
+  width:100%;
+  text-align:center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#searchWrapper {
+  display:inline-block;
+  padding-right:20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#currentWrapper {
+  width:80%;
+  left:10%;
+  padding-top:30px;
+  font-size:20px;
 }
-
-.App-link {
-  color: #61dafb;
+#selectionMenu {
+  text-align:center;
+  width:100%;
+  padding-top:30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dayWrapper {
+  width:80%;
+  left:10%;
+  padding-top:30px;
+}
+.dayWrapper P {
+  font-size:20px;
+  display:inline-block;
+  padding:10px;
+  margin:0;
+}
+.dayWrapper H1 {
+  display:inline-block;
+}
+.hourWrapper {
+  padding:10px 20px;
+}
+.hourWrapper P {
+  font-size:20px;
+  display:inline-block;
+  padding:10px;
+  margin:0;
+}
+.big {
+  font-size:30px;
+  padding-top:15px;
+  padding-right:15px;
 }
